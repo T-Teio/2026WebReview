@@ -90,4 +90,49 @@ Ordered List --> numbered or alphabetized
     <li>Item 3</li>
 </ol>
 
+Links
 
+How do I create a link to sllboces.org?
+<a href="https://sllboces.org" target="_blank">SLL BOCES</a>
+
+How do I create a link to about.html - relative path (page in the same directory)?
+<a href="about.html">About</a>
+
+Link to a file in the content folder?
+<a href="content/page.html">Page</a>
+
+A link to another section of the page?
+<a href="#about">Junp to About section</a>
+
+A link to send an email?
+<a href="mailto:student@sllboces.org">Email Me</a>
+
+Images
+What are the two required attributes for <img> tags
+alt - accessibility text
+src - file path to the Image
+<img src="images/hero.jpg" alt="Adirondack Mountains in fall">
+<img src="images/logo.png" alt="SLL BOCES Logo">
+
+What is hot-linking an image?
+- linking to an image somwhere on the internet
+- Placeholder images for design purposes
+- Replace hotlinks before publishing the site
+- If the hotlinked image gets moved, it will break your design
+
+<img src="https://google.com/2/abc/file/images/myGoogleImage.png" alt="my hotlinked image">
+
+SEO - Search engine optimization - how search engine rank well structured pages
+
+Semantic tags replaced the use of <div> tags:
+    <div class-"header"> vs <header>
+Layout Semantic Elements: header, nav, main, section, aside, footer
+
+Content Semantic Elements:
+<figure></figure> - image with caption
+<figcaption> - caption for figure image
+<time> - a fate or time value
+<address> - contact address info
+<mark> - highlighted text
+<details> / <summary> -expand and collapse more details
+<div> - non semantic container

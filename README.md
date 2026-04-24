@@ -136,3 +136,275 @@ Content Semantic Elements:
 <mark> - highlighted text
 <details> / <summary> -expand and collapse more details
 <div> - non semantic container
+
+/* --- CSS --- */
+
+:root {
+
+--color-navy: #003366;
+
+--color-gold: #F5A800;
+
+--color-white: #FFFFFF;
+
+--font-main: 'Segoe UI', Arial, sans-serif;
+
+--spacing-md: 1.5rem;
+
+}
+
+/* Using variables */
+
+nav {
+
+background-color: var(--color-navy);
+
+font-family: var(--font-main);
+
+padding: var(--spacing-md);
+}
+
+/* --- ELEMENT --- */
+h1 {
+
+color: #003366;
+
+font-size: 2rem;
+
+}
+
+/* --- CLASS --- */
+.project-card {
+
+border: 2px solid #F5A800;
+
+padding: 1rem;
+
+}
+
+/* --- ID --- */
+#hero {
+
+height: 400px;
+
+background-image:
+
+url('img/hero.jpg');
+
+}
+
+
+/* --- BOX MODEL --- */
+
+.card {
+
+/* Content */
+
+width: 300px;
+
+height: auto;
+
+/* Padding (inside) */
+
+padding: 1rem;
+
+/* Border */
+
+border: 2px solid
+
+#F5A800;
+
+/* Margin (outside) */
+
+margin: 1.5rem;
+
+/* Modern fix */
+
+box-sizing: border-box;
+
+}
+
+/* --- COLORS --- */
+
+color: #003366; /* hex */
+
+color: rgb(0, 51, 102); /* rgb */
+
+color: rgba(0,51,102,.8); /* + opacity */
+
+color: navy; /* named */
+
+background-color: var(--color-gold);
+
+/* --- BACKGROUND --- */
+
+#hero {
+
+background-color: #003366;
+
+background-image:
+
+url('images/hero.jpg');
+
+background-size: cover;
+
+background-position: center;
+
+background-repeat: no-repeat;
+
+/* Overlay technique:
+
+position + pseudo-element */
+
+position: relative;
+
+}
+
+/* --- FLEXBOX --- */
+
+nav {
+
+display: flex; /* Activate Flexbox */
+
+/* Main axis alignment */
+
+justify-content: space-between;
+
+/* Options: flex-start | flex-end
+
+center | space-between
+
+space-around | space-evenly */
+
+/* Cross axis alignment */
+
+align-items: center;
+
+/* Options: flex-start | flex-end
+
+center | stretch | baseline */
+
+flex-wrap: wrap; /* Allow wrapping */
+
+gap: 1rem; /* Space between items */
+
+}
+
+/* --- HERO SECTION --- */
+
+#hero {
+
+background-image: url('images/stlawrence.jpg');
+
+background-size: cover;
+
+background-position: center center;
+
+background-repeat: no-repeat;
+
+min-height: 450px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+position: relative;
+
+}
+
+/* Dark overlay so white text is readable */
+
+#hero::before {
+
+content: '';
+
+position: absolute;
+
+inset: 0; /* top/right/bottom/left: 0 */
+
+background: rgba(0, 51, 102, 0.6);
+
+z-index: 1;
+
+}
+
+/* Text above the overlay */
+
+.hero-content {
+
+position: relative;
+
+z-index: 2;
+
+color: #FFFFFF;
+
+text-align: center;
+}
+
+/* --- FOOTER --- */
+
+footer {
+
+background-color: var(--color-navy);
+
+color: var(--color-white);
+
+padding: 3rem 2rem 1.5rem;
+
+}
+
+.footer-nav {
+
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 2rem;
+
+justify-content: space-between;
+
+margin-bottom: 2rem;
+
+}
+
+.footer-column {
+
+flex: 1 1 180px; /* grow | shrink | min-width */
+
+}
+
+.footer-column h4 {
+
+color: var(--color-gold);
+
+font-size: 0.875rem;
+
+text-transform: uppercase;
+
+letter-spacing: 0.1em;
+
+margin-bottom: 0.75rem;
+
+}
+
+.footer-column a {
+
+display: block;
+
+color: rgba(255,255,255,0.75);
+
+text-decoration: none;
+
+padding: 0.25rem 0;
+
+transition: color 0.2s;
+
+}
+
+.footer-column a:hover {
+
+color: var(--color-gold);
+
+}

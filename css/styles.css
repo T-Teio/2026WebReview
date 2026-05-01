@@ -1,0 +1,244 @@
+/* ===============================================
+       CSS RESET & BASE STYLES
+=============================================== */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* -----------------------------------------------
+    TODO #2: SLLBOCES Color Scheme
+    Replace the placeholder values below with the
+    actual SLLBOCES colors:
+        Primary Navy:  #003366
+        Gold:          #F5A800
+        Light Gold:    #FFD66B
+        White:         #FFFFFF
+        Dark text:     #1A2B45
+----------------------------------------------- */
+:root {
+     /* TODO */ ;
+}
+
+body {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    NAVIGATION — Flexbox Required!
+    =============================================== */
+header {
+     /* TODO */ ;
+}
+
+/* TODO #3: Complete the Flexbox navigation styles.
+    The .main-nav should:
+    - Use display: flex
+    - Place the logo on the LEFT and links on the RIGHT
+    - Vertically center all items
+    - Add padding of 1rem 2rem
+    Hint: use justify-content and align-items            */
+.main-nav {
+     /* TODO */ ;
+}
+
+.nav-logo {
+     /* TODO */ ;
+}
+
+.nav-links {
+     /* TODO */ ;
+}
+
+.nav-links a {
+     /* TODO */ ;
+}
+
+.nav-links a:hover {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    HERO IMAGE SECTION
+    =============================================== */
+/* TODO #4: Complete the hero image CSS.
+    - Set background-image to your hero image file
+        (place the image in an /images/ folder first)
+    - background-size should COVER the entire section
+    - background-position should CENTER the image
+    - Set a min-height of 100vh (full screen height)
+    - Add display:flex, align-items:center, justify-content:center */
+#hero {
+     /* TODO */ ;
+}
+
+/* Dark overlay on the hero image for text readability */
+#hero::before {
+     /* TODO */ ;
+}
+
+.hero-content {
+     /* TODO */ ;
+}
+
+.hero-content h1 {
+     /* TODO */ ;
+}
+
+.hero-content p {
+     /* TODO */ ;
+}
+
+.btn {
+     /* TODO */ ;
+}
+
+.btn:hover {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    MAIN CONTENT SECTIONS
+    =============================================== */
+main {
+     /* TODO */ ;
+}
+
+section {
+     /* TODO */ ;
+}
+
+section:last-child {
+     /* TODO */ ;
+}
+
+.section-title {
+     /* TODO */ ;
+}
+
+.section-subtitle {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    COURSES GRID — What I Learned
+    =============================================== */
+.courses-grid {
+     /* TODO */ ;
+}
+
+.course-card {
+     /* TODO */ ;
+}
+
+.course-card h3 {
+     /* TODO */ ;
+}
+
+.course-card ul {
+     /* TODO */ ;
+}
+
+.course-card li {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    PROJECTS SECTION
+    =============================================== */
+.projects-grid {
+     /* TODO */ ;
+}
+
+.project-card {
+     /* TODO */ ;
+}
+
+.project-card-header {
+     /* TODO */ ;
+}
+
+.project-card-header h3 {
+     /* TODO */ ;
+}
+
+.project-card-body {
+     /* TODO */ ;
+}
+
+.project-card-body p {
+     /* TODO */ ;
+}
+
+.project-link {
+     /* TODO */ ;
+}
+
+.project-link:hover {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    SKILLS TABLE
+    =============================================== */
+.skills-table {
+     /* TODO */ ;
+}
+
+.skills-table th {
+     /* TODO */ ;
+}
+
+.skills-table td {
+     /* TODO */ ;
+}
+
+.skills-table tr:nth-child(even) {
+     /* TODO */ ;
+}
+
+.skills-table tr:hover {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    FOOTER — Flexbox Required!
+    =============================================== */
+footer {
+     /* TODO */ ;
+}
+
+/* TODO #5: Complete the footer Flexbox layout.
+    The .footer-container should:
+    - Use display: flex
+    - Wrap items when the screen is narrow (flex-wrap)
+    - Space the columns evenly across the footer
+    - Add a gap between columns               */
+.footer-container {
+     /* TODO */ ;
+}
+
+.footer-col h4 {
+     /* TODO */ ;
+}
+
+.footer-nav-links {
+     /* TODO */ ;
+}
+
+.footer-nav-links li {
+     /* TODO */ ;
+}
+
+.footer-nav-links a {
+     /* TODO */ ;
+}
+
+.footer-nav-links a:hover {
+     /* TODO */ ;
+}
+
+.footer-bottom {
+     /* TODO */ ;
+}

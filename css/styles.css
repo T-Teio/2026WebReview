@@ -87,15 +87,20 @@ header {
 }
 
 .nav-links {
-     /* TODO */ ;
+     list-style: none;
+     display: flex;
+     gap: 2rem;
 }
 
 .nav-links a {
-     /* TODO */ ;
+     color: var(--color-white);
+     text-decoration: none;
+     font-size: 1rem;
+     transition: color 0.5s;
 }
 
 .nav-links a:hover {
-     /* TODO */ ;
+     color: var(--color-gold);
 }
 
 /* ===============================================
@@ -109,16 +114,29 @@ header {
     - Set a min-height of 100vh (full screen height)
     - Add display:flex, align-items:center, justify-content:center */
 #hero {
-     /* TODO */ ;
+     background-image: url(../images/wPdamSunset.jpg);
+     background-size: cover;
+     background-position: center;
+     min-height: 100vh;
 }
 
 /* Dark overlay on the hero image for text readability */
 #hero::before {
-     /* TODO */ ;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.65)
 }
 
 .hero-content {
-     /* TODO */ ;
+     position: relative;
+     text-align: center;
+     color: var(--color-white);
+     z-index: 1;
+     padding: 2rem;
 }
 
 .hero-content h1 {

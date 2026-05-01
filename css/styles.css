@@ -11,25 +11,55 @@
     TODO #2: SLLBOCES Color Scheme
     Replace the placeholder values below with the
     actual SLLBOCES colors:
-        Primary Navy:  #003366
-        Gold:          #F5A800
+        Primary Blue:  #00539a
+        Primary Green: #008762
         Light Gold:    #FFD66B
         White:         #FFFFFF
         Dark text:     #1A2B45
+        Light Blue:    #93a4cf
+        Light Green:   #92c3b2
 ----------------------------------------------- */
 :root {
-     /* TODO */ ;
+    /* SLLBOCES Brand Colors */
+    --color-blue: #00539a;
+    --color-green: #008762;
+    --color-gold: #FFD66b;
+    --color-white: #FFFFFF;
+    --color-dark: #1A2B45;
+    --color-ltblue: #93a4cf;
+    --color-ltgreen: #92c3b2;
+
+    /* Topography */
+    --font-main: 'EB Garamond', Garamond, serif;
+    --font-bold: 'Oswald', Arial, sans-serif; 
+    
+    /* Spacing Scale */
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+
+    /* Borders */
+    --radius: 8px;
+    --border-gold: 2px solid var(--color-gold);
+
 }
 
 body {
-     /* TODO */ ;
+    font-family: var(--font-main);
+    color: var(--color-dark);
+    line-height: 1.6;
 }
 
 /* ===============================================
     NAVIGATION — Flexbox Required!
     =============================================== */
 header {
-     /* TODO */ ;
+     background-color: var(--color-blue);
+     position: sticky;
+     top: 0;
+     left: 0;
+     z-index: 100;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* TODO #3: Complete the Flexbox navigation styles.
@@ -40,11 +70,20 @@ header {
     - Add padding of 1rem 2rem
     Hint: use justify-content and align-items            */
 .main-nav {
-     /* TODO */ ;
+     display: flex;  /* Flexbox activated */
+     justify-content: space-between; /* logo left nav right */
+     align-items: center; /* vertically centered */
+     padding: 1rem 2rem;
+     max-width: 1200px;
+     margin: 0 auto;
+     font-family: var(--font-bold);
 }
 
 .nav-logo {
-     /* TODO */ ;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-gold);
+    text-decoration: none; 
 }
 
 .nav-links {
